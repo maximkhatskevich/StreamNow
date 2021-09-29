@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/maxim/Library/Mobile Documents/com~apple~CloudDocs/Dev/Demo/Streamlabs/StreamNowMobile/StreamNow.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

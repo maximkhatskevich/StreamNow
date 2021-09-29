@@ -13,6 +13,7 @@
 		940CEE7B2704BE4E00909865 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940CEE772704BE4E00909865 /* FeedView.swift */; };
 		940CEE7C2704BE4E00909865 /* StreamNowMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940CEE782704BE4E00909865 /* StreamNowMobileApp.swift */; };
 		940CEE7D2704BE4E00909865 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940CEE792704BE4E00909865 /* ProfileView.swift */; };
+		9474F0152704E38000822EED /* XCEPipeline in Frameworks */ = {isa = PBXBuildFile; productRef = 9474F0142704E38000822EED /* XCEPipeline */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9474F0152704E38000822EED /* XCEPipeline in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +91,9 @@
 			dependencies = (
 			);
 			name = StreamNowMobile;
+			packageProductDependencies = (
+				9474F0142704E38000822EED /* XCEPipeline */,
+			);
 			productName = StreamNowMobile;
 			productReference = 940CEE652704BDC400909865 /* StreamNowMobile.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +123,9 @@
 				Base,
 			);
 			mainGroup = 940CEE5C2704BDC400909865;
+			packageReferences = (
+				9474F0132704E38000822EED /* XCRemoteSwiftPackageReference "Pipeline" */,
+			);
 			productRefGroup = 940CEE662704BDC400909865 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -357,6 +365,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9474F0132704E38000822EED /* XCRemoteSwiftPackageReference "Pipeline" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/XCEssentials/Pipeline";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9474F0142704E38000822EED /* XCEPipeline */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9474F0132704E38000822EED /* XCRemoteSwiftPackageReference "Pipeline" */;
+			productName = XCEPipeline;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 940CEE5D2704BDC400909865 /* Project object */;
 }
