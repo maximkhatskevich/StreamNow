@@ -62,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				9474F01B2704E45300822EED /* Misc.swift */,
+				9474F0202704E5D800822EED /* Services */,
 				9474F0162704E3E300822EED /* Feed */,
 				940CEE792704BE4E00909865 /* ProfileView.swift */,
 				940CEE762704BE4E00909865 /* RootView.swift */,
@@ -87,6 +88,13 @@
 				9474F0182704E3E300822EED /* FeedView.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		9474F0202704E5D800822EED /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
