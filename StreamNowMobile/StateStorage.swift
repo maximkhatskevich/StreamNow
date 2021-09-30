@@ -32,10 +32,15 @@ class StateStorage: ObservableObject
 
                     Logger.run(),
                     
+                    "123"
+                        ./ Auth.forceAuthorization(with:),
+                    
                     BackendMock()
                         ./ BackendProvider.prepare(with:),
                     
-                    Feed.prepare()
+                    Feed.prepare(),
+                    
+                    Profile.prepare()
                 ]
         }
     }

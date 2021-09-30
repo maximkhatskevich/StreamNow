@@ -9,8 +9,6 @@ import Foundation
 /// adjust naming when convert from backend level data objects to feature level.
 struct FeedItem: Decodable
 {
-    var id: EntityIdentifier? = UUID().uuidString // will be usefull later for SwiftUI
-    
     let video_description: String
     let video_path: URL
     let video_number_likes: UInt

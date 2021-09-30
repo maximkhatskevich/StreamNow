@@ -64,7 +64,6 @@ struct FeedView: View
                     .padding(.bottom)
                 }
             }
-//            .listStyle(.plain)
             .navigationTitle("Feed")
         }
         .tabItem {
@@ -81,10 +80,6 @@ struct FeedView: View
 
 struct FeedView_Previews: PreviewProvider
 {
-    let stateStorage = StateStorage()
-    
-    //---
-    
     static
     var previews: some View
     {
@@ -92,3 +87,4 @@ struct FeedView_Previews: PreviewProvider
             .environmentObject(StateStorage())
     }
 }
+

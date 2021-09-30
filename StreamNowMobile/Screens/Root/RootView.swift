@@ -22,5 +22,6 @@ struct RootView_Previews: PreviewProvider
     var previews: some View
     {
         RootView()
+            .environmentObject(StateStorage())
     }
 }
