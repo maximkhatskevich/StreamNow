@@ -20,6 +20,7 @@
 		9474F041270522F600822EED /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474F040270522F600822EED /* FeedItem.swift */; };
 		9474F0432705236A00822EED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474F0422705236A00822EED /* User.swift */; };
 		9474F045270524C600822EED /* BackendMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474F044270524C600822EED /* BackendMock.swift */; };
+		9474F04B2705A99600822EED /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474F04A2705A99600822EED /* RootViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		9474F040270522F600822EED /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		9474F0422705236A00822EED /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9474F044270524C600822EED /* BackendMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendMock.swift; sourceTree = "<group>"; };
+		9474F04A2705A99600822EED /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		9474F048270541ED00822EED /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				9474F04A2705A99600822EED /* RootViewModel.swift */,
 				940CEE762704BE4E00909865 /* RootView.swift */,
 			);
 			path = Root;
@@ -226,6 +229,7 @@
 				9474F0432705236A00822EED /* User.swift in Sources */,
 				9474F0192704E3E300822EED /* FeedViewModel.swift in Sources */,
 				940CEE7C2704BE4E00909865 /* StreamNowMobileApp.swift in Sources */,
+				9474F04B2705A99600822EED /* RootViewModel.swift in Sources */,
 				9474F045270524C600822EED /* BackendMock.swift in Sources */,
 				9474F0362704F4D800822EED /* *SomeBackend.swift in Sources */,
 			);

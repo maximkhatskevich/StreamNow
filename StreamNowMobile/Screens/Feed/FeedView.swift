@@ -41,8 +41,6 @@ struct FeedView_Previews: PreviewProvider
     static
     var previews: some View
     {
-        FeedView(
-            viewModel: .init()
-        )
+        FeedView()
     }
 }

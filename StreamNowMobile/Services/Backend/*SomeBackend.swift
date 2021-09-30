@@ -10,3 +10,15 @@ protocol SomeBackend
     func getFeedItems() -> AnyPublisher<[FeedItem], Error>
     func getUser(with id: EntityIdentifier) -> AnyPublisher<User, Error>
 }
+
+//---
+
+class BackendProvider: ObservableObject
+{
+    let backend: SomeBackend
+    
+    init(backend: SomeBackend)
+    {
+        self.backend = backend
+    }
+}
