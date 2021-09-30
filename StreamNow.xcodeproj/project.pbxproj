@@ -69,13 +69,10 @@
 		940CEE672704BDC400909865 /* StreamNowMobile */ = {
 			isa = PBXGroup;
 			children = (
-				9474F0462705333F00822EED /* Resources */,
 				9474F01B2704E45300822EED /* Misc.swift */,
-				9474F0202704E5D800822EED /* Services */,
-				9474F0162704E3E300822EED /* Feed */,
-				940CEE792704BE4E00909865 /* ProfileView.swift */,
-				940CEE762704BE4E00909865 /* RootView.swift */,
 				940CEE782704BE4E00909865 /* StreamNowMobileApp.swift */,
+				9474F0202704E5D800822EED /* Services */,
+				9474F049270541F800822EED /* Screens */,
 				940CEE6C2704BDC600909865 /* Assets.xcassets */,
 				940CEE6E2704BDC600909865 /* Preview Content */,
 			);
@@ -118,11 +115,30 @@
 			path = Backend;
 			sourceTree = "<group>";
 		};
-		9474F0462705333F00822EED /* Resources */ = {
+		9474F047270541DF00822EED /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				940CEE792704BE4E00909865 /* ProfileView.swift */,
 			);
-			path = Resources;
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		9474F048270541ED00822EED /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				940CEE762704BE4E00909865 /* RootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		9474F049270541F800822EED /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9474F0162704E3E300822EED /* Feed */,
+				9474F047270541DF00822EED /* Profile */,
+				9474F048270541ED00822EED /* Root */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
