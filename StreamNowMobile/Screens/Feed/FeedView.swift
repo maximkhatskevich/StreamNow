@@ -28,12 +28,43 @@ struct FeedView: View
                     
                     //---
                     
-                    item.videoURL
-                        ./ AVPlayer.init(url:)
-                        ./ VideoPlayer.init(player:)
-                        ./ { $0.scaledToFit() }
+                    VStack(alignment: .leading)
+                    {
+                        item.videoURL
+                            ./ AVPlayer.init(url:)
+                            ./ VideoPlayer.init(player:)
+                            ./ { $0.scaledToFit() }
+                        
+                        HStack
+                        {
+                            AsyncImage(
+                                url: item.userImageURL,
+                                content: { $0 },
+                                placeholder: {
+                                    
+                                    Image("user_photo")
+                                        .resizable()
+                                        .frame(width: 50, height: 50)
+                                        .aspectRatio(contentMode: .fit)
+                                }
+                            )
+                            
+                            VStack
+                            {
+                                Text(item.videoDescription)
+                                
+                                Text("\(item.userName) | ♡ \(item.videoNumberLikes) | 💬 \(item.videoNumberComments)")
+                                    .font(Font.subheadline)
+                                    .foregroundColor(.secondary)
+                            }
+                        }
+                        .padding(.top)
+                    }
+                    .padding(.top)
+                    .padding(.bottom)
                 }
             }
+//            .listStyle(.plain)
             .navigationTitle("Feed")
         }
         .tabItem {
@@ -50,9 +81,14 @@ struct FeedView: View
 
 struct FeedView_Previews: PreviewProvider
 {
+    let stateStorage = StateStorage()
+    
+    //---
+    
     static
     var previews: some View
     {
         FeedView()
+            .environmentObject(StateStorage())
     }
 }

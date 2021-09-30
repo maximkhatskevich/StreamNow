@@ -17,5 +17,5 @@ struct FeedItem: Decodable
     let video_number_comments: UInt
     let user_id: EntityIdentifier
     let user_name: String
-    let user_image_path: String // could be URL!
+    let user_image_path: URL? // this value might be missing and we are okay with it
 }

@@ -43,21 +43,21 @@ extension Feed
         let id: EntityIdentifier = UUID().uuidString // will be usefull later for SwiftUI
         let videoDescription: String
         let videoURL: URL
-        let videoNumber_likes: UInt
-        let videoNumber_comments: UInt
+        let videoNumberLikes: UInt
+        let videoNumberComments: UInt
         let userId: EntityIdentifier
         let userName: String
-        let userImagePath: String // could be URL!
+        let userImageURL: URL?
         
         init(from backendFeedItem: FeedItem)
         {
             self.videoDescription = backendFeedItem.video_description
             self.videoURL = backendFeedItem.video_path
-            self.videoNumber_likes = backendFeedItem.video_number_likes
-            self.videoNumber_comments = backendFeedItem.video_number_comments
+            self.videoNumberLikes = backendFeedItem.video_number_likes
+            self.videoNumberComments = backendFeedItem.video_number_comments
             self.userId = backendFeedItem.user_id
             self.userName = backendFeedItem.user_name
-            self.userImagePath = backendFeedItem.user_image_path
+            self.userImageURL = backendFeedItem.user_image_path
         }
     }
 }
