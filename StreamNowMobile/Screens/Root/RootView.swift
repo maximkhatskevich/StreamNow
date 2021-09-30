@@ -4,8 +4,6 @@ import SwiftUI
 
 struct RootView: View
 {
-    let backendProvider = BackendProvider(backend: BackendMock())
-    
     var body: some View
     {
         TabView
@@ -13,9 +11,10 @@ struct RootView: View
             FeedView()
             ProfileView()
         }
-        .environmentObject(backendProvider)
     }
 }
+
+//---
 
 struct RootView_Previews: PreviewProvider
 {

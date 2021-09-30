@@ -10,7 +10,7 @@
 		940CEE6D2704BDC600909865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940CEE6C2704BDC600909865 /* Assets.xcassets */; };
 		940CEE702704BDC600909865 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940CEE6F2704BDC600909865 /* Preview Assets.xcassets */; };
 		940CEE7A2704BE4E00909865 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940CEE762704BE4E00909865 /* RootView.swift */; };
-		940CEE7C2704BE4E00909865 /* StreamNowMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940CEE782704BE4E00909865 /* StreamNowMobileApp.swift */; };
+		940CEE7C2704BE4E00909865 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940CEE782704BE4E00909865 /* App.swift */; };
 		940CEE7D2704BE4E00909865 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940CEE792704BE4E00909865 /* ProfileView.swift */; };
 		9474F0152704E38000822EED /* XCEPipeline in Frameworks */ = {isa = PBXBuildFile; productRef = 9474F0142704E38000822EED /* XCEPipeline */; };
 		9474F0192704E3E300822EED /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474F0172704E3E300822EED /* FeedViewModel.swift */; };
@@ -20,7 +20,11 @@
 		9474F041270522F600822EED /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474F040270522F600822EED /* FeedItem.swift */; };
 		9474F0432705236A00822EED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474F0422705236A00822EED /* User.swift */; };
 		9474F045270524C600822EED /* BackendMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474F044270524C600822EED /* BackendMock.swift */; };
-		9474F04B2705A99600822EED /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474F04A2705A99600822EED /* RootViewModel.swift */; };
+		9474F04E2705BC2900822EED /* XCEUniFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 9474F04D2705BC2900822EED /* XCEUniFlow */; };
+		9474F0512705C2AA00822EED /* StateStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474F0502705C2AA00822EED /* StateStorage.swift */; };
+		9474F0532705C61D00822EED /* BackendProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474F0522705C61D00822EED /* BackendProvider.swift */; };
+		9474F0552705CE2400822EED /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474F0542705CE2400822EED /* Feed.swift */; };
+		9474F0572705DB3200822EED /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474F0562705DB3200822EED /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +32,7 @@
 		940CEE6C2704BDC600909865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		940CEE6F2704BDC600909865 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		940CEE762704BE4E00909865 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		940CEE782704BE4E00909865 /* StreamNowMobileApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamNowMobileApp.swift; sourceTree = "<group>"; };
+		940CEE782704BE4E00909865 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		940CEE792704BE4E00909865 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		9474F0172704E3E300822EED /* FeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		9474F0182704E3E300822EED /* FeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
@@ -37,7 +41,10 @@
 		9474F040270522F600822EED /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		9474F0422705236A00822EED /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9474F044270524C600822EED /* BackendMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendMock.swift; sourceTree = "<group>"; };
-		9474F04A2705A99600822EED /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		9474F0502705C2AA00822EED /* StateStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateStorage.swift; sourceTree = "<group>"; };
+		9474F0522705C61D00822EED /* BackendProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendProvider.swift; sourceTree = "<group>"; };
+		9474F0542705CE2400822EED /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		9474F0562705DB3200822EED /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9474F04E2705BC2900822EED /* XCEUniFlow in Frameworks */,
 				9474F0152704E38000822EED /* XCEPipeline in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,9 +79,11 @@
 		940CEE672704BDC400909865 /* StreamNowMobile */ = {
 			isa = PBXGroup;
 			children = (
+				940CEE782704BE4E00909865 /* App.swift */,
+				9474F0502705C2AA00822EED /* StateStorage.swift */,
 				9474F01B2704E45300822EED /* Misc.swift */,
-				940CEE782704BE4E00909865 /* StreamNowMobileApp.swift */,
 				9474F0202704E5D800822EED /* Services */,
+				9474F04F2705BC3700822EED /* Features */,
 				9474F049270541F800822EED /* Screens */,
 				940CEE6C2704BDC600909865 /* Assets.xcassets */,
 				940CEE6E2704BDC600909865 /* Preview Content */,
@@ -128,7 +138,6 @@
 		9474F048270541ED00822EED /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				9474F04A2705A99600822EED /* RootViewModel.swift */,
 				940CEE762704BE4E00909865 /* RootView.swift */,
 			);
 			path = Root;
@@ -142,6 +151,16 @@
 				9474F048270541ED00822EED /* Root */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		9474F04F2705BC3700822EED /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				9474F0522705C61D00822EED /* BackendProvider.swift */,
+				9474F0542705CE2400822EED /* Feed.swift */,
+				9474F0562705DB3200822EED /* Logger.swift */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +181,7 @@
 			name = StreamNowMobile;
 			packageProductDependencies = (
 				9474F0142704E38000822EED /* XCEPipeline */,
+				9474F04D2705BC2900822EED /* XCEUniFlow */,
 			);
 			productName = StreamNowMobile;
 			productReference = 940CEE652704BDC400909865 /* StreamNowMobile.app */;
@@ -194,6 +214,7 @@
 			mainGroup = 940CEE5C2704BDC400909865;
 			packageReferences = (
 				9474F0132704E38000822EED /* XCRemoteSwiftPackageReference "Pipeline" */,
+				9474F04C2705BC2900822EED /* XCRemoteSwiftPackageReference "UniFlow" */,
 			);
 			productRefGroup = 940CEE662704BDC400909865 /* Products */;
 			projectDirPath = "";
@@ -222,16 +243,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				9474F01A2704E3E300822EED /* FeedView.swift in Sources */,
+				9474F0552705CE2400822EED /* Feed.swift in Sources */,
 				940CEE7D2704BE4E00909865 /* ProfileView.swift in Sources */,
 				940CEE7A2704BE4E00909865 /* RootView.swift in Sources */,
+				9474F0512705C2AA00822EED /* StateStorage.swift in Sources */,
 				9474F01C2704E45300822EED /* Misc.swift in Sources */,
 				9474F041270522F600822EED /* FeedItem.swift in Sources */,
 				9474F0432705236A00822EED /* User.swift in Sources */,
 				9474F0192704E3E300822EED /* FeedViewModel.swift in Sources */,
-				940CEE7C2704BE4E00909865 /* StreamNowMobileApp.swift in Sources */,
-				9474F04B2705A99600822EED /* RootViewModel.swift in Sources */,
+				940CEE7C2704BE4E00909865 /* App.swift in Sources */,
 				9474F045270524C600822EED /* BackendMock.swift in Sources */,
+				9474F0572705DB3200822EED /* Logger.swift in Sources */,
 				9474F0362704F4D800822EED /* *SomeBackend.swift in Sources */,
+				9474F0532705C61D00822EED /* BackendProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +475,14 @@
 				kind = branch;
 			};
 		};
+		9474F04C2705BC2900822EED /* XCRemoteSwiftPackageReference "UniFlow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/XCEssentials/UniFlow";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -458,6 +490,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9474F0132704E38000822EED /* XCRemoteSwiftPackageReference "Pipeline" */;
 			productName = XCEPipeline;
+		};
+		9474F04D2705BC2900822EED /* XCEUniFlow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9474F04C2705BC2900822EED /* XCRemoteSwiftPackageReference "UniFlow" */;
+			productName = XCEUniFlow;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

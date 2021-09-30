@@ -18,6 +18,15 @@
           "revision": "6010ab5ab866eaa26e21a52ab0e142da9ab7b07b",
           "version": "2.2.0"
         }
+      },
+      {
+        "package": "XCEUniFlow",
+        "repositoryURL": "https://github.com/XCEssentials/UniFlow",
+        "state": {
+          "branch": null,
+          "revision": "ed9458cf0ce91a014a62e936565c964e85c55d29",
+          "version": "5.3.0"
+        }
       }
     ]
   },

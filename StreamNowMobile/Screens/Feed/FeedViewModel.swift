@@ -1,37 +1,33 @@
 import Combine
 import SwiftUI
+import XCEUniFlow
 
 //---
 
-extension FeedItem: Identifiable {}
+extension Feed.Item: Identifiable {}
 
 //---
 
 final
-class FeedViewModel: ObservableObject
+class FeedViewModel: ObservableObject, StateObserver
 {
-    @EnvironmentObject var backendProvider: BackendProvider
-    
     @Published
-    var items: [FeedItem] = []
+    var items: [Feed.Item] = []
+}
+
+// MARK: - Bindings
+
+extension FeedViewModel
+{
+    static
+    let bindings: [ObserverBinding] = [
     
-    var subscription: AnyCancellable?
-    
-    //---
-    
-    init()
-    {
-        self.subscription = backendProvider
-            .backend
-            .getFeedItems()
-            .sink(
-                receiveCompletion: { [weak self] _ in
-                    
-                    self?.subscription = nil
-                },
-                receiveValue: { [weak self] in
-                    
-                    self?.items = $0
-                })
-    }
+        scenario()
+            .when("Data is ready",
+                  Transition.Into<Feed.Ready>.done)
+            .givn("Take the items",
+                  mapMutation: { $0.newState.items })
+            .then("Propagate it to the view",
+                  do: { $0.items = $1 })
+    ]
 }

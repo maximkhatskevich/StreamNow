@@ -4,21 +4,9 @@ import Foundation
 //---
 
 /// Abstract representation of a service that acts as backend for this particular app,
-/// expected to be URL/HTTP request based web service (endpoints based).
+/// expected to be URL/HTTP request based web service (endpoints based) in production.
 protocol SomeBackend
 {
     func getFeedItems() -> AnyPublisher<[FeedItem], Error>
     func getUser(with id: EntityIdentifier) -> AnyPublisher<User, Error>
-}
-
-//---
-
-class BackendProvider: ObservableObject
-{
-    let backend: SomeBackend
-    
-    init(backend: SomeBackend)
-    {
-        self.backend = backend
-    }
 }
